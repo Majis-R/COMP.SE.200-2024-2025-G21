@@ -1,0 +1,25 @@
+@startuml buyer
+title Process diagram for buyer
+start
+:User opens webstore;
+while (Done browsing?) is (no)
+    :User searches for products;
+    :User adds product to cart;
+endwhile (yes)
+
+:User opens cart;
+if (User wants to buy?) then (yes) 
+    else(no)
+
+        :Cart saved for next time;
+        stop
+endif
+repeat :User in cart;
+:User goes to pay;
+backward: User is taken back to cart;
+repeat while (Payment is succesfulf?) is (no)
+->yes;
+:Order is placed;
+
+stop
+@enduml
