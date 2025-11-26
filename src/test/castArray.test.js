@@ -35,6 +35,9 @@ describe('castArray', () => {
         expect(result).toBe(arr)
     })
 
+    test('casts multiple inputs to a single array correctly', () => {
+        expect(castArray(null, undefined,)).toEqual([null, undefined])
+    })
 }) 
 
 
