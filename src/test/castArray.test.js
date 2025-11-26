@@ -35,8 +35,21 @@ describe('castArray', () => {
         expect(result).toBe(arr)
     })
 
+    // It is not clear what is supposed to happen when the function is provided with 
+    // multiple arguments but gut feeing says that they should be cast into a single array
     test('casts multiple inputs to a single array correctly', () => {
         expect(castArray(null, undefined,)).toEqual([null, undefined])
+    })
+
+    // This one fails because the function does not handle multiple input arays with the 
+    // same logic that it does singular values
+    test('casts multiple input arrays into a single array', () => {
+        const arr1 = [1, 2, 3]
+        const arr2 = [4, 5, 6]
+        const arr = castArray(arr1, arr2)
+        expect(arr).toEqual([arr1, arr2])
+        expect(arr[0]).toBe(arr1)
+        expect(arr[1]).toBe(arr2)
     })
 }) 
 
