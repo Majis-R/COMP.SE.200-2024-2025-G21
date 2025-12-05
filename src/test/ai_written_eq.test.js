@@ -1,6 +1,4 @@
-// AI written test file for testing that jest is set up correctly locally. 
-// Two of the tests should fail since eq is not implemented in the way they are said to be.
-// This file should not be used in the final submission
+// AI written test file
 
 import eq from '../eq';
 
@@ -22,7 +20,6 @@ describe('eq', () => {
         expect(eq(true, true)).toBe(true);
     });
 
-    // should fail
     test('should return false for a primitive and its object wrapper', () => {
         expect(eq('a', Object('a'))).toBe(false);
         expect(eq(1, Object(1))).toBe(false);
@@ -33,7 +30,6 @@ describe('eq', () => {
         expect(eq(NaN, NaN)).toBe(true);
     });
 
-    // should fail
     test('should return false for different types', () => {
         expect(eq(1, '1')).toBe(false);
         expect(eq(true, 1)).toBe(false);
