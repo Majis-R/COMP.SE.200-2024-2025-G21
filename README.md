@@ -31,7 +31,7 @@ The repository contains:
   - `eq`
 
 The tests check correctness and expected behaviour based on specification and documentation.  
-Defects discovered by the tests are reported as GitHub Issues and with Bug Reports (src/test/bug_reports) structured bug report template.
+Defects discovered by the tests are reported as GitHub Issues with structured bug report template.
 
 ---
 
