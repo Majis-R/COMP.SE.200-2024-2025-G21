@@ -1,4 +1,4 @@
-# Bug Report Template
+# Bug Report 2: get empty path handling
 
 **Title:**  
 get returns default value for empty path instead of the whole object

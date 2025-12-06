@@ -21,7 +21,7 @@ arguments.
 
 ## Steps to Reproduce
 1.  Import castArray form the utility library.
-2.  Rn the following:
+2.  Run the following:
 
 const arr1 = [1, 2, 3]
 const arr2 = [4, 5, 6]
