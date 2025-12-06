@@ -2,8 +2,6 @@
 Tampere University – COMP.SE.200  
 Unit Testing Project Repository
 
-[![Coverage Status](https://coveralls.io/repos/github/Majis-R/COMP.SE.200-2024-2025-G21/badge.svg?branch=main)](https://coveralls.io/github/Majis-R/COMP.SE.200-2024-2025-G21?branch=main)
-
 ---
 
 ## Purpose of this repository
@@ -20,7 +18,7 @@ Our group is **Group 21**.
 The repository contains:
 
 - A pre-provided utility library (source code under test)
-- Our own unit tests targeting selected functions:
+- Our own unit tests targeting 10 selected functions:
   - `countBy`
   - `castArray`
   - `compact`
@@ -53,12 +51,19 @@ The CI pipeline performs the following steps on each push:
 
 ## Coveralls integration
 
+A dynamic coverage badge:
+[![Coverage Status](https://coveralls.io/repos/github/Majis-R/COMP.SE.200-2024-2025-G21/badge.svg?branch=main)](https://coveralls.io/github/Majis-R/COMP.SE.200-2024-2025-G21?branch=main)
+
+Coverage is based on 10 selected functions from the provided utility library.
+The .internal directory and other non-tested helpers were excluded from the coverage calculation using Jest’s collectCoverageFrom and coveragePathIgnorePatterns configuration.
+
+This ensures that the coverage percentage reflects only the functions that were actually tested (countBy, castArray, compact, filter, get, eq, isLength, reduce, slice, and words) rather than the entire library.
+
 Coverage reports are available publicly at:
 
 **Coveralls URL:**  
 [https://coveralls.io/github/<username>/<repo>](https://coveralls.io/github/Majis-R/COMP.SE.200-2024-2025-G21)
 
-A dynamic coverage badge is displayed at the top of this README.
 
 ---
 
