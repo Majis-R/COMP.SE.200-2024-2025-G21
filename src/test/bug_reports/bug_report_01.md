@@ -1,4 +1,4 @@
-# Bug Report Template
+# Bug Report 1: countBy off by one
 
 **Title:**  
 countBy returns counts that are off by one for each key
