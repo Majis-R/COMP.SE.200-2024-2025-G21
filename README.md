@@ -1,4 +1,4 @@
-# Software Testing Course – Group 21  
+# Software Testing Project – Group 21  
 Tampere University – COMP.SE.200  
 Unit Testing Project Repository
 
